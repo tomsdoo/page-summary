@@ -3,7 +3,7 @@ src/
 
 package-lock.json
 tsconfig.base.json
-tsconfig.cjs.jspn
+tsconfig.cjs.json
 tsconfig.esm.json
 .gitignore
 .npmignore
