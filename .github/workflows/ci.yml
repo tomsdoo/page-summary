@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '16.x'
 
-    - name: npm ci and build and test
+    - name: npm ci and build
       run: |
         npm install
         npm run build
