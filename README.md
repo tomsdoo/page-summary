@@ -2,6 +2,13 @@
 
 It's a page summary getter.
 
+![npm](https://img.shields.io/npm/v/page-summary)
+![NPM](https://img.shields.io/npm/l/page-summary)
+![npms.io (quality)](https://img.shields.io/npms-io/quality-score/page-summary)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/page-summary)
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
+
+
 ### Installation
 
 ``` shell
