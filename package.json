@@ -12,6 +12,10 @@
   "keywords": [],
   "author": "tom",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomsdoo/page-summary"
+  },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/mocha": "^9.1.1",
