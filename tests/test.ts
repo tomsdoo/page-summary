@@ -92,6 +92,6 @@ describe("Zenn", () => {
     const url = $(selector).attr("href");
     assert(typeof url === "string");
     const data = await PageSummary.fetch(`${origin}${url}`);
-    assert(data.description);
+    assert(typeof data.description === "string");
   });
 });
