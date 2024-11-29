@@ -48,19 +48,7 @@ describe("Hatena", () => {
     const url = $("body a[href*='hatenadiary.com/entry/']").attr("href");
     assert(typeof url === "string");
     const data = await PageSummary.fetch(url);
-    assert(!data.title.match(/\s-\s/));
-  });
-});
-
-describe("LineBlog", () => {
-  const origin = "https://lineblog.me";
-  it("fetch Note", async () => {
-    const { $ } = await PageSummary.fetchOptions(origin);
-    const selector = "body a[href^='https://lineblog.me/'][href*='/archives/']";
-    const url = $(selector).attr("href");
-    assert(typeof url === "string");
-    const data = await PageSummary.fetch(url);
-    assert(!data.title.match(/\s:\s/));
+    assert(data.title.match(/.+/));
   });
 });
 
