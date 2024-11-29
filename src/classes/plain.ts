@@ -1,4 +1,4 @@
-import { InterpreterBase, InterpreterOptions } from "./base";
+import { InterpreterBase, InterpreterOptions } from "@/classes/base";
 
 export class PlainSite extends InterpreterBase {
   constructor(options: InterpreterOptions){

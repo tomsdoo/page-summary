@@ -1,6 +1,6 @@
 import * as cheerio from "cheerio";
 import axios from "axios";
-import { Util } from "./util";
+import { Util } from "@/classes/util";
 
 export type InterpreterOptions = {
   url: string;

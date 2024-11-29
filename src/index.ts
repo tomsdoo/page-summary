@@ -5,7 +5,7 @@ import {
   PlainSite,
   Qiita,
   Zenn
-} from "./classes/";
+} from "@/classes/";
 
 type PageSummaryData = {
   url: string;
