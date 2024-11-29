@@ -1,7 +1,6 @@
 import {
   Ameblo,
   Hatena,
-  LineBlog,
   Note,
   PlainSite,
   Qiita,
@@ -31,7 +30,6 @@ export class PageSummary {
       ...options.data,
       ...new Ameblo(options).getPageObject(),
       ...new Hatena(options).getPageObject(),
-      ...new LineBlog(options).getPageObject(),
       ...new Note(options).getPageObject(),
       ...new Qiita(options).getPageObject(),
       ...new Zenn(options).getPageObject()
