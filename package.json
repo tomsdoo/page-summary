@@ -2,14 +2,18 @@
   "name": "page-summary",
   "version": "1.1.2",
   "description": "It's a page summary getter.",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ":": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
+    "build": "tsup",
     "test": "vitest"
   },
   "keywords": [],
@@ -20,11 +24,11 @@
     "url": "https://github.com/tomsdoo/page-summary"
   },
   "devDependencies": {
+    "@tsconfig/node22": "22.0.0",
     "@types/axios": "0.9.36",
+    "tsup": "8.3.5",
     "typescript": "5.7.2",
-    "vitest": "2.1.6",
-    "webpack": "5.96.1",
-    "webpack-cli": "5.1.4"
+    "vitest": "2.1.6"
   },
   "dependencies": {
     "axios": "1.7.8",

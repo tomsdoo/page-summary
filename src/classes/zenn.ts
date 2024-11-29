@@ -1,4 +1,4 @@
-import { InterpreterBase, InterpreterOptions } from "./base";
+import { InterpreterBase, InterpreterOptions } from "@/classes/base";
 
 export class Zenn extends InterpreterBase {
   constructor(options: InterpreterOptions){

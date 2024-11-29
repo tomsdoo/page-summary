@@ -1,5 +1,5 @@
 import { beforeEach, describe, it, expect } from "vitest";
-import { PageSummary } from "../src/";
+import { PageSummary } from "@/index";
 
 describe("PlainSite", () => {
   it("fetch plain", async () => {
