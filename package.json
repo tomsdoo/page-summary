@@ -25,13 +25,11 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "22.0.0",
-    "@types/axios": "0.9.36",
     "tsup": "8.3.5",
     "typescript": "5.7.2",
     "vitest": "2.1.6"
   },
   "dependencies": {
-    "axios": "1.7.8",
     "cheerio": "1.0.0"
   }
 }

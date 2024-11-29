@@ -1,5 +1,4 @@
 import * as cheerio from "cheerio";
-import axios from "axios";
 import { Util } from "@/classes/util";
 
 export type InterpreterOptions = {
@@ -34,7 +33,7 @@ export class InterpreterBase {
       : {};
   }
   public static async fetch(url: string){
-    const html = await axios<string>({url}).then(res => res.data);
+    const html = await fetch(url).then(res => res.text());
     const $ = cheerio.load(html);
     const title = $("head title").text();
     const metaDescription = ($("head meta[name='description']").attr("content") || "")
