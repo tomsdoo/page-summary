@@ -34,7 +34,7 @@ export class InterpreterBase {
       : {};
   }
   public static async fetch(url: string){
-    const html = await axios(url).then(res => res.data);
+    const html = await axios<string>({url}).then(res => res.data);
     const $ = cheerio.load(html);
     const title = $("head title").text();
     const metaDescription = ($("head meta[name='description']").attr("content") || "")
